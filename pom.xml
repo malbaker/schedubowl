@@ -54,7 +54,10 @@
 		    <artifactId>jquery</artifactId>
 		    <version>3.5.1</version>
 		</dependency>
-		
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-mongodb</artifactId>
+		</dependency>
 		
 		
 		
