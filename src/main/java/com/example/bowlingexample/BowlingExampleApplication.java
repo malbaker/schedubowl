@@ -15,6 +15,8 @@ public class BowlingExampleApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BowlingExampleApplication.class, args);
+	
+	
 	}
 
 	@Bean
