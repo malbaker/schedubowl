@@ -1,0 +1,11 @@
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/services/CustomUserDetailsService.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/user/User.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/ServletInitializer.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/BowlingExampleApplication.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/configs/WebSecurityConfig.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/configs/CustomizeAuthenticationSuccessHandler.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/repository/UserRepository.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/controller/AuthController.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/user/UserRole.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/repository/RoleRepository.java
+/home/mbaker/Documents/GitRepos/schedubowl/src/main/java/com/example/bowlingexample/configs/PageConfig.java
