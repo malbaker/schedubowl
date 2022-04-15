@@ -66,6 +66,17 @@ public class AuthController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/user_dash", method = RequestMethod.GET)
+    public ModelAndView user_dash() {
+        ModelAndView modelAndView = new ModelAndView();
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User user = userService.findUserByEmail(auth.getName());
+        modelAndView.addObject("currentUser", user);
+        modelAndView.addObject("fullName", "Welcome " + user.getName());
+        modelAndView.setViewName("user_dash");
+        return modelAndView;
+    }
+
     @RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
     public ModelAndView home() {
         ModelAndView modelAndView = new ModelAndView();
