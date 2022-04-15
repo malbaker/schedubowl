@@ -1,4 +1,4 @@
-package com.example.bowlingexample.user;
+package com.example.bowlingexample.entities;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.IndexDirection;

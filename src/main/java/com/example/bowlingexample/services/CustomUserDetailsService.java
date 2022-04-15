@@ -16,8 +16,8 @@ import org.springframework.stereotype.Service;
 
 import com.example.bowlingexample.repository.RoleRepository;
 import com.example.bowlingexample.repository.UserRepository;
-import com.example.bowlingexample.user.User;
-import com.example.bowlingexample.user.UserRole;
+import com.example.bowlingexample.entities.User;
+import com.example.bowlingexample.entities.UserRole;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService{

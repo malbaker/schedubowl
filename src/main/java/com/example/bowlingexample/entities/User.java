@@ -1,4 +1,4 @@
-package com.example.bowlingexample.user;
+package com.example.bowlingexample.entities;
 
 import java.util.Set;
 import org.springframework.data.annotation.Id;

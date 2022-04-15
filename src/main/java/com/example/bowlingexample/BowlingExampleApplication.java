@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import com.example.bowlingexample.repository.RoleRepository;
-import com.example.bowlingexample.user.UserRole;
+import com.example.bowlingexample.entities.UserRole;
 
 @SpringBootApplication
 @EnableMongoRepositories

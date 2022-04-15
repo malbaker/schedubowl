@@ -2,7 +2,7 @@ package com.example.bowlingexample.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.example.bowlingexample.user.User;
+import com.example.bowlingexample.entities.User;
 
 
 
