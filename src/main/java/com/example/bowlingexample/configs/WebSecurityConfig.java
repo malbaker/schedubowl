@@ -16,7 +16,7 @@ import com.example.bowlingexample.services.CustomUserDetailsService;
 
 @Configuration
 @EnableWebSecurity
-@ComponentScan("com.djamware.springsecuritymongo.configs")
+@ComponentScan("com.example.bowlingexample.configs")
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired

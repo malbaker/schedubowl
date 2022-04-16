@@ -11,8 +11,6 @@ public class Reservation {
     @Id
     private String id;
 
-    private Calendar date;
-
     private User user;
 
     public Reservation() {
