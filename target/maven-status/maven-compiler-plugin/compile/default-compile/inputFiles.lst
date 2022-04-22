@@ -1,0 +1,13 @@
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/BowlingExampleApplication.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/entities/User.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/configs/CustomizeAuthenticationSuccessHandler.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/ServletInitializer.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/entities/Reservation.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/repository/UserRepository.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/configs/WebSecurityConfig.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/entities/UserRole.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/configs/PageConfig.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/controller/AuthController.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/repository/RoleRepository.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/repository/ReservationRepository.java
+/home/mbaker/Documents/GitRepos/bowling-demo/src/main/java/com/example/bowlingexample/services/CustomUserDetailsService.java
