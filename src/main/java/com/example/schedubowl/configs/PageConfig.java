@@ -6,6 +6,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/*
+PageConfig: Class for establishing view controllers, part of the model view architecture, for each site in the application
+ */
+
 @Configuration
 public class PageConfig implements WebMvcConfigurer{
 	

@@ -5,6 +5,9 @@ import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+/*
+UserRole: Class for identifying roles for site user, either USER or ADMIN; each role has unique ID
+ */
 @Document(collection="role")
 public class UserRole {
 	

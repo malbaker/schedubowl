@@ -8,6 +8,10 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
+
+/*
+Reservation class:
+ */
 @Document(collection = "Reservation")
 public class Reservation {
 
