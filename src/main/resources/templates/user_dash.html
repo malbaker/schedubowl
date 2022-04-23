@@ -11,6 +11,18 @@
         <div layout:fragment="content">
             <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
             <h2>This is your User Dashboard</h2>
+
+            <script type="text/javascript">
+                // Popup window code
+                function newPopup(url) {
+                    const popupWindow = window.open(
+                        url, 'reserve', 'height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
+                }
+            </script>
+            <p><a href="JavaScript:newPopup('/reserve');">Make a resrevation</a></p>
+
+
+            <p>Click <a th:href="@{/reserve}">here</a> make a reservation.</p>
         </div>
     </body>
 </html>

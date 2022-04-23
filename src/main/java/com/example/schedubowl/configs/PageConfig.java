@@ -22,5 +22,6 @@ public class PageConfig implements WebMvcConfigurer{
         registry.addViewController("/admin_dash").setViewName("admin_dash");
         registry.addViewController("/user_dash").setViewName("user_dash");
         registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/reserve").setViewName("reserve");
     }
 }
