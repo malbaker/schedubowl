@@ -7,7 +7,10 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
+/*
+User class with unique ID, identifying parameters such as name and email,
+password for authentication(which is encrypted upon saving), and set of roles(USER, ADMIN)
+ */
 @Document(collection = "AppUser")
 public class User{
 	

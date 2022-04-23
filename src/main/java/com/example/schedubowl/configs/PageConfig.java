@@ -6,6 +6,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/*
+PageConfig: Class for establishing view controllers, part of the model view architecture, for each site in the application
+ */
+
 @Configuration
 public class PageConfig implements WebMvcConfigurer{
 	
@@ -22,5 +26,6 @@ public class PageConfig implements WebMvcConfigurer{
         registry.addViewController("/admin_dash").setViewName("admin_dash");
         registry.addViewController("/user_dash").setViewName("user_dash");
         registry.addViewController("/login").setViewName("login");
+        registry.addViewController("/reserve").setViewName("reserve");
     }
 }
