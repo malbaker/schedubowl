@@ -4,30 +4,25 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.format.annotation.DateTimeFormat;
-
-import java.util.Date;
 
 
 /*
 Reservation class:
  */
-@Document(collection = "Reservation")
+@Document(collection = "test")
 public class Reservation {
 
     @Id
     private String id;
-
     @Indexed(unique = true,direction = IndexDirection.DESCENDING)
-    @DateTimeFormat(pattern = "MM-dd-yyyy")
-    private Date date;
 
+    private String resTimeDate;
 
-    private String timeMade;
+    private String email;
 
-    private User user;
+    private int lanes;
 
-    private int party;
+    private String shoeSizes;
 
 
     public String getId() {
@@ -38,35 +33,37 @@ public class Reservation {
         this.id = id;
     }
 
-    public Date getDate() {
-        return date;
+    public String getResTimeDate() {
+        return resTimeDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setResTimeDate(String resTimeDate) {
+        this.resTimeDate = resTimeDate;
     }
 
-    public User getUser() {
-        return user;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getParty() {
-        return party;
+    public int getLanes() {
+        return lanes;
     }
 
-    public void setParty(int party) {
-        this.party = party;
+    public void setLanes(int lanes) {
+        this.lanes = lanes;
     }
 
-    public String getTimeMade() {
-        return timeMade;
+    public String getShoeSizes() {
+        return shoeSizes;
     }
 
-    public void setTimeMade(String timeMade) {
-        this.timeMade = timeMade;
+    public void setShoeSizes(String shoeSizes) {
+        this.shoeSizes = shoeSizes;
     }
 }
+
+
