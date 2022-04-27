@@ -9,6 +9,28 @@
     <title>Reservation view</title>
 </head>
 <body>
+    <h2>Here are your current reservations:</h2>
+    <div layout:fragment="content">
+        <p>
+            <a href = "javascript:history.back()" class="btn btn-info btn-lrg">Back to previous page</a>
+        </p>
 
+
+        <table class="table table-bordered table-striped">
+
+            <thead>
+            <tr>
+                <th>Time and Date</th>
+                <th>Reserved Shoe Sizes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="reservation: ${reservation}">
+                <td th:text="${reservation.resTimeDate}" />
+                <td th:text="${reservation.shoeSizes}" />
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

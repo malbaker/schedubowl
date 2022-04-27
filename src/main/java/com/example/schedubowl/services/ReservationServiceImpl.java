@@ -16,10 +16,7 @@ public class ReservationServiceImpl implements ReservationService {
     @Override
     public List<Reservation> userReservations(String email) {
         List<Reservation> reservationList = new ArrayList<Reservation>();
-        for (Reservation res :
-                reservationRepo.findByEmail(email)) {
-            reservationList.add(0, res);
-        }
+        reservationRepo.findByEmail(email).forEach(reservationList::add);
         return reservationList;
     }
 }

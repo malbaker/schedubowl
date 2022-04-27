@@ -2,6 +2,7 @@ package com.example.schedubowl.controller;
 
 import com.example.schedubowl.entities.Reservation;
 import com.example.schedubowl.entities.User;
+import com.example.schedubowl.repository.ReservationRepository;
 import com.example.schedubowl.services.CustomUserDetailsService;
 import com.example.schedubowl.services.ReservationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,16 +23,16 @@ public class ReservationController {
     private CustomUserDetailsService userService;
     @Autowired
     private ReservationServiceImpl reservationService;
+    @Autowired
+    private ReservationRepository resRepo;
 
     @RequestMapping(value = "/view_res", method = RequestMethod.GET)
     public ModelAndView reservation(){
-        ModelAndView modelAndView = new ModelAndView();
+        ModelAndView modelAndView = new ModelAndView("view_res");
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findUserByEmail(auth.getName());
         List<Reservation> resList = reservationService.userReservations(user.getEmail());
-        for (Reservation res: resList) {
-            modelAndView.addObject("reservation",res);
-        }
+        modelAndView.addObject("reservationList", resList);
         modelAndView.setViewName("view_res");
         return modelAndView;
     }
