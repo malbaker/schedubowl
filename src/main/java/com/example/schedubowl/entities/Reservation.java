@@ -20,7 +20,7 @@ public class Reservation {
 
     private String email;
 
-    private int lanes;
+    private String lanes;
 
     private String shoeSizes;
 
@@ -49,11 +49,11 @@ public class Reservation {
         this.email = email;
     }
 
-    public int getLanes() {
+    public String getLanes() {
         return lanes;
     }
 
-    public void setLanes(int lanes) {
+    public void setLanes(String lanes) {
         this.lanes = lanes;
     }
 
