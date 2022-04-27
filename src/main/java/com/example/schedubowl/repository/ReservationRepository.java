@@ -5,8 +5,10 @@ import com.example.schedubowl.entities.Reservation;
 import com.example.schedubowl.entities.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
+import java.util.List;
+
 public interface ReservationRepository extends MongoRepository<Reservation, String> {
 
-    Reservation findByEmail(String email);
+    List<Reservation> findByEmail(String email);
 
 }

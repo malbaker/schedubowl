@@ -31,8 +31,7 @@ public class CustomUserDetailsService implements UserDetailsService{
 	@Autowired
 	private RoleRepository roleRepo;
 
-	@Autowired
-	private ReservationRepository reservationRepo;
+
 	
 	@Autowired
 	private BCryptPasswordEncoder bCryptPasswordEncoder;

@@ -1,26 +1,18 @@
 package com.example.schedubowl.services;
 
 import com.example.schedubowl.entities.Reservation;
+import com.example.schedubowl.repository.ReservationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-@Service
-public class ReservationService implements UserDetailsService {
+import java.util.ArrayList;
+import java.util.List;
 
-
-    /*
-    Methods for creating reservations, modifying and deleting.
-     */
-
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return null;
+public interface ReservationService {
+    List<Reservation> userReservations(String email);
     }
 
-    // @Query("{'email' : ?0}")
-    // Reservation findResByEmail(String email);
-
-}

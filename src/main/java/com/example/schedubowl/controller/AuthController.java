@@ -83,12 +83,5 @@ public class AuthController {
         return modelAndView;
     }
 
-//    @RequestMapping(value = "/view_res",method = RequestMethod.GET)
-//    public ModelAndView view_res(){
-//        ModelAndView modelAndView = new ModelAndView();
-//        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-//        User user = userService.findUserByEmail(auth.getName());
-//
-//        return modelAndView;
-//    }
+
 }

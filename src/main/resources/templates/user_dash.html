@@ -4,7 +4,7 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="index">
-    <head>
+<head>
         <title>User Dashboard</title>
     </head>
     <body>
@@ -21,7 +21,7 @@
             </script>
 
             <p><a href="JavaScript:newPopup('/reserve');">Make a reservation</a></p>
-            <p><a href="view_res.html"></a>View current reservations</p>
+            <p><a th:href="@{/view_res}">View current reservations</a></p>
 
 
         </div>
