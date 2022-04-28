@@ -39,6 +39,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
     }
 
+
+    /* Defining authentication standards for the pages, pages such as the user and admin dashboards are role specific
+     and will be verified with Spring Authentication
+     */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -46,8 +50,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
                 .antMatchers("/").permitAll()
                 .antMatchers("/login").permitAll()
                 .antMatchers("/register").permitAll()
-                .antMatchers("reserve").permitAll()
-                .antMatchers("view_res").permitAll()
+                .antMatchers("/reserve").permitAll()
+                .antMatchers("/user_resview").permitAll()
                 .antMatchers("/user_dash").permitAll()
                 .antMatchers("/admin_dash/**").hasAuthority("ADMIN").anyRequest()
                 .authenticated().and().csrf().disable().formLogin().successHandler(customizeAuthenticationSuccessHandler)

@@ -12,6 +12,9 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ReservationInterface: Interface which declares methods we use to use our data within HTTP requests
+ */
 public interface ReservationService {
     List<Reservation> userReservations(String email);
     }

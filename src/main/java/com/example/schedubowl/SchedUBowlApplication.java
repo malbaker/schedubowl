@@ -14,11 +14,14 @@ public class SchedUBowlApplication {
 	
 
 	public static void main(String[] args) {
+        // Runs Spring Boot script to establish Tomcat web server with our specified exposed port, allowing the site to be accessed.
 		SpringApplication.run(SchedUBowlApplication.class, args);
 	
 	
 	}
 
+
+    // Ensures that necessary roles are present in the database upon running the application
 	@Bean
     CommandLineRunner init(RoleRepository roleRepository) {
 

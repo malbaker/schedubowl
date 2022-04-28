@@ -18,7 +18,8 @@ public class PageConfig implements WebMvcConfigurer{
 		BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
 		return bCryptPasswordEncoder;
 	}
-	
+
+    // Initializing views for all the pages in the site
 	@Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/home").setViewName("home");
@@ -27,6 +28,6 @@ public class PageConfig implements WebMvcConfigurer{
         registry.addViewController("/user_dash").setViewName("user_dash");
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/reserve").setViewName("reserve");
-        registry.addViewController("/view_res").setViewName("view_res");
+        registry.addViewController("/user_resview").setViewName("user_resview");
     }
 }

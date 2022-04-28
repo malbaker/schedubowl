@@ -15,13 +15,9 @@ public class Reservation {
     @Id
     private String id;
     @Indexed(unique = true,direction = IndexDirection.DESCENDING)
-
     private String time;
-
     private String email;
-
     private String lanes;
-
     private String shoes;
 
 

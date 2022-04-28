@@ -12,9 +12,9 @@
             <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
             <h2>This is your Admin Dashboard</h2>
 
-            <label></label>
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required="" />
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>

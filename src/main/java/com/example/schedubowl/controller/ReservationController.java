@@ -6,7 +6,6 @@ import com.example.schedubowl.repository.ReservationRepository;
 import com.example.schedubowl.services.CustomUserDetailsService;
 import com.example.schedubowl.services.ReservationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -27,21 +26,15 @@ public class ReservationController {
     @Autowired
     private ReservationRepository resRepo;
 
-    @RequestMapping(value = "/view_res", method = RequestMethod.GET)
+    @RequestMapping(value = "/user_resview", method = RequestMethod.GET)
     public ModelAndView reservation(){
-        ModelAndView modelAndView = new ModelAndView("view_res");
+        ModelAndView modelAndView = new ModelAndView("user_resview");
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findUserByEmail(auth.getName());
         List<Reservation> resList = reservationService.userReservations(user.getEmail());
         modelAndView.addObject("reservationList", resList);
-        modelAndView.setViewName("view_res");
         return modelAndView;
     }
 
-//    @RequestMapping(value = "/view_res", method = RequestMethod.GET)
-//    public ModelAndView listUserReservations(){
-//        ModelAndView modelAndView =  new ModelAndView("view_res");
-//
-//        return modelAndView;
-//    }
+
 }
