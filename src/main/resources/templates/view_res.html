@@ -22,12 +22,14 @@
             <tr>
                 <th>Time and Date</th>
                 <th>Reserved Shoe Sizes</th>
+                <th>Lanes reserved</th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="reservation: ${reservation}">
-                <td th:text="${reservation.resTimeDate}" />
-                <td th:text="${reservation.shoeSizes}" />
+            <tr th:each="reservation: ${reservationList}">
+                <td th:text="${reservation.time}" />
+                <td th:text="${reservation.shoes}" />
+                <td th:text="${reservation.lanes}"/>
             </tr>
             </tbody>
         </table>

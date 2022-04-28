@@ -16,13 +16,13 @@ public class Reservation {
     private String id;
     @Indexed(unique = true,direction = IndexDirection.DESCENDING)
 
-    private String resTimeDate;
+    private String time;
 
     private String email;
 
     private String lanes;
 
-    private String shoeSizes;
+    private String shoes;
 
 
     public String getId() {
@@ -33,12 +33,12 @@ public class Reservation {
         this.id = id;
     }
 
-    public String getResTimeDate() {
-        return resTimeDate;
+    public String getTime() {
+        return time;
     }
 
-    public void setResTimeDate(String resTimeDate) {
-        this.resTimeDate = resTimeDate;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public String getEmail() {
@@ -57,12 +57,12 @@ public class Reservation {
         this.lanes = lanes;
     }
 
-    public String getShoeSizes() {
-        return shoeSizes;
+    public String getShoes() {
+        return shoes;
     }
 
-    public void setShoeSizes(String shoeSizes) {
-        this.shoeSizes = shoeSizes;
+    public void setShoes(String shoes) {
+        this.shoes = shoes;
     }
 }
 
