@@ -21,7 +21,7 @@ The bowling reservation system requires a MongoDB Compass download and connectio
 				User: schedubowl.cs411@gmail.com
 				Password: CS411spring2022
 		3. Connect to the schedubowl-dedicated server with this URI:
-		mongodb+srv://mbaker:JCole2014Forest@schedubowl-dedicated.cxx0m.mongodb.net/test
+		[* link *]
 		4. Launch SchedUBowlApplication.java
 		5. Open a web browser and use this link: localhost:6969
 
